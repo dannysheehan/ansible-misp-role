@@ -1,0 +1,10 @@
+# {{ ansible_managed }}
+#
+
+[client]
+user="{{ misp.db.user }}"
+password="{{ misp.db.pass }}" 
+port="{{ misp.db.port }}"
+host="{{ misp.db.host }}"
+ssl-cert="~/mysql-client-cert.pem"
+ssl-key="~/mysql-client-key.pem"
